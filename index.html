@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>budget app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="d-flex">
+          <div>
+            <!-- <i class="fas fa-trash"></i> -->
+            <h1 class="title text-uppercase mt-3">budget app</h1>
+            <form
+              class="form-input border border-3 p-3 border-success rounded-3 mt-5"
+              style="width: 640px"
+            >
+              <h4 class="fs-4 text-dark">Please Enter Your Budget</h4>
+              <div>
+                <input
+                  type="number"
+                  id="num-input"
+                  class="budget-input input-group p-2 mb-4 border border-1 border-success rounded-3"
+                />
+              </div>
+              <button
+                class="btn btn-outline-success border border-2 border-success"
+              >
+                Calculate
+              </button>
+            </form>
+            <form
+              class="form border border-3 p-3 border-danger rounded-3 mt-5"
+              style="width: 640px"
+            >
+              <h4 class="fs-4 text-dark mt-2">Please Enter Your Expense</h4>
+              <div>
+                <input
+                  type="text"
+                  class="text-input input-group p-2 border border-1 border-danger rounded-3"
+                />
+              </div>
+              <h4 class="fs-4 text-dark mt-4">Please Enter Expense Amount</h4>
+              <div>
+                <input
+                  type="number"
+                  id="num-input"
+                  class="expense-input input-group p-2 mb-4 border border-1 border-danger rounded-3"
+                />
+              </div>
+              <button
+                class="btn btn-outline-danger border border-2 border-danger text-danger"
+              >
+                Add Expense
+              </button>
+            </form>
+          </div>
+          <div
+            class="d-flex justify-content-between"
+            style="margin-top: 120px; margin-left: 70px"
+          >
+            <div class="div text-center">
+              <h3 class="fs-3 text-uppercase">budget</h3>
+              <span class="budget-icon"
+                ><i class="fas fa-money-bill-alt fa-4x text-info mt-2 mb-3"></i
+              ></span>
+              <h2 class="budget-title fs-1 text-success mb-4">$ 0</h2>
+              <h3 class="fs-4">Expense Title</h3>
+            </div>
+            <div
+              class="text-center spent-div"
+              style="margin-left: 70px; margin-right: 70px"
+            >
+              <h3 class="fs-3 text-uppercase">expenses</h3>
+              <span class="budget-icon"
+                ><i class="fas fa-credit-card fa-4x text-info mt-2 mb-3"></i
+              ></span>
+              <h2 class="expense-title fs-1 text-danger mb-4">$ 0</h2>
+              <h3 class="fs-4">Expense Value</h3>
+            </div>
+            <div class="text-center balance-div">
+              <h3 class="fs-3 text-uppercase">balance</h3>
+              <span class="balance-icon"
+                ><i class="fas fa-dollar-sign fa-4x text-info mt-2 mb-3"></i
+              ></span>
+              <h2 class="balance-title fs-1 text-dark mb-4">$ 0</h2>
+              <h3 class="fs-4">Balance</h3>
+            </div>
+          </div>
+        </div>
+        <ul class="expenses"></ul>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
